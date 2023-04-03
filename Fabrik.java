@@ -9,6 +9,7 @@ public class Fabrik {
                produktionsPreis = produktionsPreis * (1 - 0.01 * i);
             }
         }
+        System.out.println("hi");
     }
 
     
