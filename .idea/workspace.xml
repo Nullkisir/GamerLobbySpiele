@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="26cbdf95-2234-4c46-b3dc-38a9f0a95bcf" name="Changes" comment="." />
+    <list default="true" id="7be09e24-f1fe-42ea-a9a9-d8984f098624" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,78 +10,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2NvKPrcYZsFGzNWU453w6asf0M8" />
+  <component name="ProjectId" id="2NvHEOsp8lZtBpUa7stZBOU7dz0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+    "last_opened_file_path": "C:/Users/kevin/IdeaProjects"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="26cbdf95-2234-4c46-b3dc-38a9f0a95bcf" name="Changes" comment="" />
-      <created>1680539095752</created>
+      <changelist id="7be09e24-f1fe-42ea-a9a9-d8984f098624" name="Changes" comment="" />
+      <created>1680537524797</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1680539095752</updated>
-      <workItem from="1680539097120" duration="4079000" />
+      <updated>1680537524797</updated>
     </task>
-    <task id="LOCAL-00001" summary="test">
-      <created>1680539376457</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1680539376457</updated>
-    </task>
-    <task id="LOCAL-00002" summary="test">
-      <created>1680539442850</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1680539442850</updated>
-    </task>
-    <task id="LOCAL-00003" summary="test">
-      <created>1680540273393</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1680540273393</updated>
-    </task>
-    <task id="LOCAL-00004" summary="ereigniskarten v1">
-      <created>1680543226239</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1680543226239</updated>
-    </task>
-    <task id="LOCAL-00005" summary=".">
-      <created>1680543714477</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1680543714477</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="test" />
-    <MESSAGE value="ereigniskarten v1" />
-    <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

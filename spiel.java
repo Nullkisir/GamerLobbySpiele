@@ -5,6 +5,6 @@ public class spiel{
     static Spieler[] spielerListe = new Spieler[anzahlSpieler];
     public static void main(String[] args)
     {
-        fabrik.main();    
+        fabrik.mengenrabattRechner();
     }
 }
