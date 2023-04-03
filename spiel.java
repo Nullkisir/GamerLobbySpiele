@@ -1,4 +1,11 @@
+import java.util.Scanner;
 public class spiel{
+
+    Scanner scan = new Scanner(System.in);
+    int spielerAnzahl = scan.nextInt();
+    String spielerNamen = scan.nextLine();
+    double spielerAnzahd = scan.nextDouble();
+
     static Fabrik fabrik = new Fabrik();
     static int anzahlSpieler = 5; // Ändern
     static int anzahlKunden = 101;
