@@ -1,7 +1,10 @@
 public class spiel{
     static Fabrik fabrik = new Fabrik();
-    
-    public static void main(String[] args) {
-        fabrik.main();    
+    static int anzahlSpieler = 5; // Ändern
+    static int anzahlKunden = 101;
+    static Spieler[] spielerListe = new Spieler[anzahlSpieler];
+    public static void main(String[] args)
+    {
+        fabrik.mengenrabattRechner();
     }
 }
