@@ -3,6 +3,13 @@ public class Spieler{
     String name;
     Fabrik fabrik;
 
+    public Spieler(double konto, String name)
+    {
+        this.konto = konto;
+        this.name = name;
+        fabrik = new Fabrik();
+    }
+
     //setzt die Produktionsmenge der Spieler
     public void setProduktionsMenge(int produktionsAnzahl){
         fabrik.produktionsMenge = produktionsAnzahl;
