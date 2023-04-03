@@ -8,7 +8,7 @@ public class Markt {
         int num = scan.nextInt();
 
 
-        System.out.print("Waehle eine Upgrade Kategorie");
+        System.out.print("Waehle eine Upgrade Kategorie"+num);
         
         scan.close();
     }
