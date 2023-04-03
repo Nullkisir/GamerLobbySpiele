@@ -3,7 +3,7 @@ public class Fabrik {
     int zaehlerMengenrabatt = 10;
     double produktionsPreis = 0.25 * produktionsMenge;
 
-    public void main(String[] args) {
+    public void main() {
         for(int i = 0; i==1000; i++) {
             if(produktionsMenge < zaehlerMengenrabatt){
                produktionsPreis = produktionsPreis * (1 - 0.01 * i);
