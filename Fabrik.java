@@ -1,13 +1,21 @@
 public class Fabrik {
     int produktionsMenge = 1;
-    int zaehlerMengenrabatt = 1;
+    private int zaehlerMengenrabatt = 1;
     double produktionsPreis = 2.50 * produktionsMenge;
-    double fixKosten = 250;
+    private double fixKosten = 250;
     String[] upgrades = {"Foerderband","Buerosoftware","Energiedeal"};
     int[] upgradeLvl = {0,0,0};
 
+    public double produktionskosten(){
+        mengenrabattRechner();
+        foerderbandUpgrade();
+        buerosoftwareUpgrade();
+        energiedealUpgrade();
+        produktionsPreis += fixKosten;
+        return produktionsPreis;
+    }
 
-    public void mengenrabattRechner() {
+    private void mengenrabattRechner() {
         for(int i = 0; i==6; i++) {
             if(produktionsMenge < zaehlerMengenrabatt){
                produktionsPreis = produktionsPreis * (1 - 0.01 * i);
@@ -18,21 +26,17 @@ public class Fabrik {
             }
         }
     }
-    public void foerderbandUpgrade(){
+    private void foerderbandUpgrade(){
         double foerderbandEffekt = 0.01;
         produktionsPreis -= ((foerderbandEffekt * upgradeLvl[0]) * produktionsMenge);
     }
 
-    public void buerosoftwareUpgrade(){
+    private void buerosoftwareUpgrade(){
         double buerosoftwareEffekt = 0.002;
         produktionsPreis *= (1 - (buerosoftwareEffekt * upgradeLvl[1]));
     }
 
-    public void energiedealUpgrade(){
+    private void energiedealUpgrade(){
         fixKosten -= (10 * upgradeLvl[2]);
-    }
-
-    public void produktionskosten(){
-        produktionsPreis += fixKosten;
     }
 }
