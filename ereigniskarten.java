@@ -1,3 +1,4 @@
-public class ereigniskarten {
+public class ereigniskarten
+{
 
 }
