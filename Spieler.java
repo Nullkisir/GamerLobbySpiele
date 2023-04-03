@@ -3,11 +3,13 @@ public class Spieler{
     String name;
     Fabrik fabrik;
 
+    //setzt die Produktionsmenge der Spieler
     public void setProduktionsMenge(int produktionsAnzahl){
         fabrik.produktionsMenge = produktionsAnzahl;
     }
 
-    public void fabrikUpgrade(){
+    //führt ein Upgrade gemäß den Upgrade nummer aus
+    public void fabrikUpgrade(int upgradeNum){
         
     }
 }
