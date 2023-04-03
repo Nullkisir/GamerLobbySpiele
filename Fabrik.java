@@ -20,7 +20,7 @@ public class Fabrik {
     }
     public void foerderbandUpgrade(){
         double foerderbandEffekt = 0.01;
-        produktionsPreis -= (foerderbandEffekt * upgradeLvl[0]);
+        produktionsPreis -= ((foerderbandEffekt * upgradeLvl[0]) * produktionsMenge);
     }
 
     public void buerosoftwareUpgrade(){
