@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7be09e24-f1fe-42ea-a9a9-d8984f098624" name="Changes" comment="Spiel anpassung">
+    <list default="true" id="7be09e24-f1fe-42ea-a9a9-d8984f098624" name="Changes" comment="Spiel spielerAnlegen&#10;Spieler Konstruktor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spieler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spieler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spiel.java" beforeDir="false" afterPath="$PROJECT_DIR$/spiel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +25,12 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/kevin/IdeaProjects",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -38,6 +41,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680537524797</updated>
+      <workItem from="1680603035567" duration="2569000" />
     </task>
     <task id="LOCAL-00001" summary="Spiel anpassung">
       <created>1680545733145</created>
@@ -46,8 +50,18 @@
       <option name="project" value="LOCAL" />
       <updated>1680545733145</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Spiel spielerAnlegen&#10;Spieler Konstruktor">
+      <created>1680548203471</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680548203471</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -62,6 +76,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Spiel anpassung" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spiel anpassung" />
+    <MESSAGE value="Spiel spielerAnlegen&#10;Spieler Konstruktor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spiel spielerAnlegen&#10;Spieler Konstruktor" />
   </component>
 </project>

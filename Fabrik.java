@@ -8,7 +8,7 @@ public class Fabrik {
     private int zaehlerMengenrabatt = 1;
 
     //Menge mal Preis pro Stueck = Preis insgesamt
-    public double produktionsPreis = 2.50 * produktionsMenge;
+    public double produktionsPreis;
 
     //Jede Fabrik kostet pro Runde immer einen gewissen Betrag
     private double fixKosten = 250;
@@ -18,7 +18,11 @@ public class Fabrik {
     public int[] upgradeLvl = {0,0,0,0};
 
     //Alle Methoden werden aufgerufen und die fixkosten werden dazugerechnet um dann den finalen Preis uebergeben zu koennen
-    public double produktionskosten(){
+    public double produktionskosten(int uebergebeneMenge)
+    {
+        produktionsMenge = uebergebeneMenge;
+        produktionsPreis = 2.50 * produktionsMenge;
+
         mengenrabattRechner();
         foerderbandUpgrade();
         buerosoftwareUpgrade();
