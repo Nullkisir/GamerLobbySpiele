@@ -1,8 +1,8 @@
 public class ereigniskarten
 {
     String[] ereignissTexte =
-            {       "Senkt die Produktionskosten für eine Runde um 5 bis 25%",
-                    "Steigert die Produktionskosten für eine Runde um 5 bis 25%",
+            {       "Senkt die Produktionskosten für eine Runde um 5% bis 25%",
+                    "Steigert die Produktionskosten für eine Runde um 5% bis 25%",
                     "Senkt die Anzahl der Kunden um 10 bis 50 Kunden",
                     "Steigert die Anzahl der Kunden um 10 bis 50 Kunden "};
     int anzahlEreignisse = ereignissTexte.length;
@@ -19,7 +19,7 @@ public class ereigniskarten
             {
                 ausgabe(ereignissTexte[0]);
 
-                //Änderung: Produktionskosten Senkung 5 bis 25% eine Runde
+                //Änderung: Produktionskosten Senkung 5% bis 25% eine Runde
                 double produktionsKostenSenkung = (int) (Math.random() * 20 + 5);
                 for(int i = 0; i < spiel.spielerListe.length; i ++)
                 {
@@ -30,7 +30,7 @@ public class ereigniskarten
             {
                 ausgabe(ereignissTexte[1]);
 
-                //Änderung: Produktionskosten Steigung 5 bis 25% eine Runde
+                //Änderung: Produktionskosten Steigung 5% bis 25% eine Runde
                 double produktionsKostenSteigung = (int) (Math.random() * 20 + 5);
                 for(int i = 0; i < spiel.spielerListe.length; i ++)
                 {
