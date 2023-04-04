@@ -14,8 +14,8 @@ public class Fabrik {
     private double fixKosten = 250;
 
     //Upgrades vom Markt werden hier angelegt und darunter werden die Lvl. fuer die jeweilige Fabrik gespeichert
-    public String[] upgrades = {"Foerderband","Buerosoftware","Energiedeal"};
-    public int[] upgradeLvl = {0,0,0};
+    public String[] upgrades = {"Foerderband","Buerosoftware","Energiedeal","Versicherung"};
+    public int[] upgradeLvl = {0,0,0,0};
 
     //Alle Methoden werden aufgerufen und die fixkosten werden dazugerechnet um dann den finalen Preis uebergeben zu koennen
     public double produktionskosten(){
@@ -56,4 +56,6 @@ public class Fabrik {
     private void energiedealUpgrade(){
         fixKosten -= (10 * upgradeLvl[2]);
     }
+
+    //Versicherungen kosten jede Runde Geld, koennen schwaechen aber bestimmte Ereignisse
 }

@@ -15,7 +15,7 @@ public class Spieler{
         fabrik.produktionsMenge = produktionsAnzahl;
     }
 
-    //führt ein Upgrade gemäß den Upgrade nummer aus
+    //fuehrt ein Upgrade gemaess den Upgrade nummer aus
     public void fabrikUpgrade(int upgradeNum){
         
     }

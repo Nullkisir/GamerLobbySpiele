@@ -9,7 +9,7 @@ public class ereigniskarten
     public void ereigniskartenMain()
     {
         double wahrscheinlichkeitFuerEreigniss = Math.random();
-        //Überprüft ob ein Ereigniss eintritt
+        //Ueberprueft ob ein Ereigniss eintritt
         if(wahrscheinlichkeitFuerEreigniss <= 0.33)
         {
             int indexEreigniss = (int) (Math.random() * (anzahlEreignisse-1));
@@ -19,7 +19,7 @@ public class ereigniskarten
             {
                 ausgabe(ereignissTexte[0]);
 
-                //Änderung: Produktionskosten Senkung 5% bis 25% eine Runde
+                //Aenderung: Produktionskosten Senkung 5% bis 25% eine Runde
                 double produktionsKostenSenkung = (int) (Math.random() * 20 + 5);
                 for(int i = 0; i < spiel.spielerListe.length; i ++)
                 {
@@ -30,7 +30,7 @@ public class ereigniskarten
             {
                 ausgabe(ereignissTexte[1]);
 
-                //Änderung: Produktionskosten Steigung 5% bis 25% eine Runde
+                //Aenderung: Produktionskosten Steigung 5% bis 25% eine Runde
                 double produktionsKostenSteigung = (int) (Math.random() * 20 + 5);
                 for(int i = 0; i < spiel.spielerListe.length; i ++)
                 {
@@ -41,7 +41,7 @@ public class ereigniskarten
             {
                 ausgabe(ereignissTexte[2]);
 
-                //Änderung: Anzahl Kunden verringert um 10 bis 50 eine Runde
+                //Aenderung: Anzahl Kunden verringert um 10 bis 50 eine Runde
                 int anzahlKundenSenkung = (int) (Math.random() * 40 + 10);
                 spiel.anzahlKunden = spiel.anzahlKunden - anzahlKundenSenkung;
             }
@@ -49,7 +49,7 @@ public class ereigniskarten
             {
                 ausgabe(ereignissTexte[3]);
 
-                //Änderung: Anzahl Kunden steigt um 10 bis 50 eine Runde
+                //Aenderung: Anzahl Kunden steigt um 10 bis 50 eine Runde
                 int anzahlKundenSteigung = (int) (Math.random() * 40 + 10);
                 spiel.anzahlKunden = spiel.anzahlKunden + anzahlKundenSteigung;
             }
