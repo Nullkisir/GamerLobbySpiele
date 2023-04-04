@@ -10,6 +10,7 @@ public class spiel{
     static boolean spielEnde = false;
     static Spieler[] spielerListe;
     static int[] produktionsZahlen;
+    static int[] verkaufspreise;
     public static void main(String[] args)
     {
         spielerAnlegen();
@@ -40,31 +41,50 @@ public class spiel{
     //Hier findet der komplette Ablauf einer Runde statt wird aufgerufen bis spielEnde = false
     private static void spielAbblauf()
     {
+        //Sammelt alle produktionsmengen
         for(int i = 0; i < produktionsZahlen.length;i++)
         {
             System.out.println("Hallo " + spielerListe[i] + " wie viel willst du produzieren?");
             Scanner scan3 = new Scanner(System.in);
             int produktionsmenge = scan3.nextInt();
             produktionsZahlen[i] = produktionsmenge;
-
-            //TODO Ereignisse einbauen
-
-            double preis = spielerListe[i].fabrik.produktionskosten(produktionsmenge);
+            System.out.println("Und wie viel sollen deine Produkte kosten? Bitte in Cent angeben");
+            Scanner scan4 = new Scanner(System.in);
+            int verkaufspreis = scan4.nextInt();
+            verkaufspreise[i] = verkaufspreis;
+        }
+        //Ereigniss erfolgt
+        ereigniskarten.ereigniskartenMain();
+        //Berechnung der Produktionszahlen und Kostenabrechnung
+        for(int i = 0; i < produktionsZahlen.length;i++)
+        {
+            double preis = spielerListe[i].fabrik.produktionskosten(produktionsZahlen[i]);
             if(spielerListe[i].konto - preis >= 0)
             {
                 spielerListe[i].konto = spielerListe[i].konto - preis;
+                System.out.println("Es wurden erfolgreich " + produktionsZahlen[i] + " Einheiten produziert");
             }
             else
             {
-                for(int x = 0; x < 100; x++)
+                for(int x = produktionsZahlen[i]; x > 0; x--)
                 {
-
+                    preis = spielerListe[i].fabrik.produktionskosten(x);
+                    if(spielerListe[i].konto - preis >= 0)
+                    {
+                        spielerListe[i].konto = spielerListe[i].konto - preis;
+                        System.out.println("Es wurden nur " + x + " Einheiten produziert");
+                    }
                 }
             }
+            profitBerechnen(); //TODO implementieren
+            ueberpruefeSpielende(); //TODO implementieren
         }
-         // fabrik.produktionskosten();
     }
     private static void profitBerechnen()
+    {
+
+    }
+    private static void ueberpruefeSpielende()
     {
 
     }
