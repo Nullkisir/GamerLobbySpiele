@@ -2,7 +2,7 @@ public class Fabrik {
 
 
     //Die produktionsMenge wird von Spieler uebergeben und hier spaeter zur berechnung des ProduktionsPreises benutzt
-    public int produktionsMenge = 1;
+    public int produktionsMenge;
 
     //Mengenrabatt Schrittzaehler, immer *10 fuer die jeweiligen Spruenge
     private int zaehlerMengenrabatt = 1;
@@ -23,6 +23,7 @@ public class Fabrik {
         foerderbandUpgrade();
         buerosoftwareUpgrade();
         energiedealUpgrade();
+        versicherungUpgrade();
         produktionsPreis += fixKosten;
         return produktionsPreis;
     }
@@ -58,4 +59,8 @@ public class Fabrik {
     }
 
     //Versicherungen kosten jede Runde Geld, koennen schwaechen aber bestimmte Ereignisse
+    public void versicherungUpgrade(){
+        double senkungProduktion = ereigniskarten.senkungProduktion;
+        produktionsMenge *= senkungProduktion;
+    }
 }

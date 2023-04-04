@@ -1,12 +1,15 @@
 public class ereigniskarten
 {
-    String[] ereignissTexte =
+    public static double senkungProduktion;
+
+    static String[] ereignissTexte =
             {       "Senkt die Produktionskosten für eine Runde um 5% bis 25%",
                     "Steigert die Produktionskosten für eine Runde um 5% bis 25%",
                     "Senkt die Anzahl der Kunden um 10 bis 50 Kunden",
-                    "Steigert die Anzahl der Kunden um 10 bis 50 Kunden "};
-    int anzahlEreignisse = ereignissTexte.length;
-    public void ereigniskartenMain()
+                    "Steigert die Anzahl der Kunden um 10 bis 50 Kunden ",
+                    "Unwetter vernichtet einen Teil der Produktion "};
+    static int anzahlEreignisse = ereignissTexte.length;
+    public static void ereigniskartenMain()
     {
         double wahrscheinlichkeitFuerEreigniss = Math.random();
         //Ueberprueft ob ein Ereigniss eintritt
@@ -53,10 +56,23 @@ public class ereigniskarten
                 int anzahlKundenSteigung = (int) (Math.random() * 40 + 10);
                 spiel.anzahlKunden = spiel.anzahlKunden + anzahlKundenSteigung;
             }
+            else if(indexEreigniss == 4)
+            {
+                ausgabe(ereignissTexte[4]);
+
+                //Aenderung: Produkte die produziert werden sinkt um 50% -5% pro Versicherungsupgrade
+                for(int i = 0; i < spiel.spielerListe.length; i ++)
+                {
+                int[] upgradeLvl = spiel.spielerListe[i].fabrik.upgradeLvl;
+                double senkungsSenkung = 1 - (upgradeLvl[3] * 0.05);
+                senkungProduktion = 0.5 - senkungsSenkung;
+                }
+
+            }
         }
     }
     //Funktion regelt die Ausgabe:
-    private void ausgabe(String text)
+    private static void ausgabe(String text)
     {
         System.out.println(text);
     }
