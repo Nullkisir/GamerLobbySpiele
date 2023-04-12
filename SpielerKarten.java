@@ -14,5 +14,7 @@ public class SpielerKarten {
         TODO man muss dann halt noch gucken wie man Nix da o.ae. einbauen kann, da dies ja Reaktionen sind
      */
 
+    //Das ist einfach ein Test ignor
+
 
 }
